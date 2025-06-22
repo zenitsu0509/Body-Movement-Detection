@@ -2,7 +2,8 @@ import cv2
 import mediapipe as mp
 import pickle
 import joblib
-
+import pandas as pd
+import numpy as np
 
 # Initialize Mediapipe models
 mp_holistic = mp.solutions.holistic
