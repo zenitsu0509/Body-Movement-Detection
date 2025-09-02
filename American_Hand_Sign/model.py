@@ -9,7 +9,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = YOLO("best.pt").to(device)  
 
 # Open webcam
-cap = cv2.VideoCapture(0)  # 0 for default webcam, or use a video file path
+cap = cv2.VideoCapture(0)  
 
 # Set the desired frame size (640x640)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
